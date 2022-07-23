@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 body {
   font-family: sans-serif;
   font-weight: 400;
@@ -14,36 +15,27 @@ body {
   padding: 0;
   overflow-x: none;
 }
-p {
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #fff;
-  margin: 0;
-}
+
 .section-fluid-main {
   position: relative;
   display: block;
   overflow: hidden;
   width: calc(100% - 40px);
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1140px;
+  margin: 0 auto;
   padding: 100px 0;
+  max-width: 1140px;
 }
+
 .section-row {
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin: 0 -15px;
 }
+
 .section-row:hover .section-col {
   opacity: 0.1;
 }
+
 .section-col {
   position: relative;
   width: 100%;
@@ -51,9 +43,11 @@ p {
   max-width: 50%;
   transition: opacity 250ms linear;
 }
+
 .section-row .section-col:hover {
   opacity: 1;
 }
+
 .section {
   position: relative;
   display: block;
@@ -62,6 +56,7 @@ p {
   cursor: pointer;
   padding: 15px;
 }
+
 .section-in {
   position: relative;
   display: block;
@@ -70,12 +65,14 @@ p {
   border-radius: 6px;
   cursor: pointer;
 }
+
 .section-in img {
   display: block;
   width: 100%;
   height: auto;
   transition: transform 250ms linear;
 }
+
 .section-col:hover .section-in img {
   transform: scale(1.1) rotate(-3deg);
 }
@@ -89,25 +86,22 @@ p {
   overflow: hidden;
   z-index: 100;
   pointer-events: none;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   align-self: center;
   mix-blend-mode: difference;
 }
+
 .hover-text h2 {
-  font-family: sans-serif;
-  font-weight: 800;
   font-size: 8vw;
   line-height: 1;
   color: #fff;
   opacity: 0;
   transform: scale(0.8);
-  transition: transform 250ms linear, opacity 250ms ease;
+  transition: transform 250 linear, opacity 250ms ease;
 }
+
 .section-col:hover + .hover-text h2 {
   opacity: 1;
   transform: scale(1);
@@ -118,6 +112,7 @@ p {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
   .hover-text h2 {
     font-size: 12vw;
   }
